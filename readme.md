@@ -1,5 +1,10 @@
 # three-starter
-Minimal three.js starter with imports + script tags for quick prototyping
+
+Minimal three.js starter for quick prototyping
+
+import three from CDN in a module script
+
+One html file, no build tool needed
 
 Run locally:
 
