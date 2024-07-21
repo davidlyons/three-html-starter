@@ -23,8 +23,8 @@
     <script type="importmap">
       {
         "imports": {
-          "three": "https://unpkg.com/three@0.162.0/build/three.module.js",
-          "three/addons/": "https://unpkg.com/three@0.162.0/examples/jsm/"
+          "three": "https://cdn.jsdelivr.net/npm/three@0.166.0/build/three.module.js",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.166.0/examples/jsm/"
         }
       }
     </script>
@@ -40,7 +40,7 @@
       const scene = new THREE.Scene();
 
       const renderer = new THREE.WebGLRenderer({ antialias: true });
-      renderer.setPixelRatio(window.devicePixelRatio);
+      renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
       renderer.setSize(window.innerWidth, window.innerHeight);
       container.appendChild(renderer.domElement);
 
