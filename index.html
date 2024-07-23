@@ -22,7 +22,8 @@
       {
         "imports": {
           "three": "https://cdn.jsdelivr.net/npm/three@0.166.0/build/three.module.js",
-          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.166.0/examples/jsm/"
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.166.0/examples/jsm/",
+          "lil-gui": "https://cdn.jsdelivr.net/npm/lil-gui@0.19/+esm"
         }
       }
     </script>
@@ -31,7 +32,7 @@
       import * as THREE from 'three';
       import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
       import { RoundedBoxGeometry } from 'three/addons/geometries/RoundedBoxGeometry.js';
-      import { GUI } from 'three/addons/libs/lil-gui.module.min.js';
+      import { GUI } from 'lil-gui';
 
       const container = document.getElementById('container');
 
